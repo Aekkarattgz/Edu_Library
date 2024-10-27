@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>เข้าสู่ระบบ</h1>
+
+<div class="row">
+    <!--ใช้ class cloum 6-->
+    <div class="col-md-6">
+        <form action="/Account/Login" method="post">
+            <div class="form-group">
+                <label for="username">UserId</label>
+                <input type="text" id="username" name="Username" class="form-control" placeholder="Enter your UserId" required />
+                <span class="text-danger" id="usernameError"></span>
+            </div>
+
+            <!-- ส่วน Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <!-- ช่องกรอกข้อมูลสำหรับ Password -->
+                <input type="password" id="password" name="Password" class="form-control" placeholder="Enter your password" required />
+            </div>
+
+            <!-- Remember Me Checkbox -->
+            <div class="form-group form-check">
+                <input type="checkbox" id="rememberMe" name="RememberMe" class="form-check-input" />
+                <label for="rememberMe" class="form-check-label">Remember me</label>
+            </div>
+
+            <!-- ปุ่ม Log in -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Log in</button>
+            </div>
+
+            <!-- ลิงก์ไปหน้าลงทะเบียนสำหรับผู้ใช้ใหม่ -->
+            <div class="form-group">
+                <a href="/Account/Register">Don't have an account? Register here.</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+

@@ -29,6 +29,26 @@ namespace Edu_Library.Controllers
         {
             return View();
         }
+        public IActionResult Register(string username, string email, string password, string cpassword)
+        {
+
+            // ตรวจสอบว่ารหัสผ่านทั้งสองตรงกันหรือไม่
+            if (password != cpassword)
+            {
+                ModelState.AddModelError("Cpassword", "Passwords do not match."); // ระบุชื่อฟิลด์ที่มีข้อผิดพลาด
+            }
+
+            // ตรวจสอบ ModelState ว่ามีข้อผิดพลาดหรือไม่
+            if (!ModelState.IsValid)
+            {
+                return View(); // ส่งคืน View หากมีข้อผิดพลาด
+            }
+
+            // เพิ่มการสร้างบัญชีผู้ใช้ที่นี่
+
+            // ถ้าทุกอย่างถูกต้อง ให้เปลี่ยนเส้นทางไปยังหน้าที่ต้องการ
+            return RedirectToAction("Index", "Home");
+        }
         public IActionResult AccessDenied()
         {
             return View();

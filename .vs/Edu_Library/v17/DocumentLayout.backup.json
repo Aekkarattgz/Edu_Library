@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\OS\\Desktop\\Edu_Library\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Edu_Library\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T01:16:57.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Edu_Library\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T01:16:55.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Edu_Library\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Edu_Library\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T01:08:08.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Program.cs",
+              "RelativeDocumentMoniker": "Edu_Library\\Program.cs",
+              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Program.cs",
+              "RelativeToolTip": "Edu_Library\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T01:04:22.434Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

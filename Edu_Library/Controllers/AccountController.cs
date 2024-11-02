@@ -1,58 +1,63 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Edu_Library.Controllers
 {
     public class AccountController : Controller
     {
+        // แสดงฟอร์มหน้า Login
         [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
 
+        // รับข้อมูลจากฟอร์ม Login เมื่อผู้ใช้ส่งข้อมูล (HTTP POST)
         [HttpPost]
         public IActionResult Login(string username, string password, bool rememberMe)
         {
-            // ตรวจสอบข้อมูลที่ผู้ใช้กรอก
-            if (username == "admin" && password == "password") // แค่ตัวอย่างสำหรับการตรวจสอบ
+            // ตรวจสอบข้อมูลที่ผู้ใช้กรอก (เพียงตัวอย่างการตรวจสอบข้อมูลแบบฮาร์ดโค้ด)
+            if (username == "admin" && password == "password") // ใช้แค่เพื่อการทดสอบ
             {
-                // ถ้าข้อมูลถูกต้อง เปลี่ยนเส้นทางไปยังหน้าหลัก
+                // หากข้อมูลถูกต้อง ให้เปลี่ยนเส้นทางไปยังหน้าหลัก
                 return RedirectToAction("Index", "Home");
             }
 
-            // หากข้อมูลไม่ถูกต้อง แสดงข้อความข้อผิดพลาด
-            ViewData["Error"] = "Invalid username or password.";
+            // หากข้อมูลไม่ถูกต้อง เพิ่มข้อความข้อผิดพลาดลงใน ModelState
+            ModelState.AddModelError("admin & password", "Invalid username or password.");
+
+            // ส่ง View กลับพร้อมแสดงข้อผิดพลาด
             return View();
         }
+
+        // แสดงฟอร์มหน้า Register
         [HttpGet]
         public IActionResult Register()
         {
             return View();
         }
+
+        // รับข้อมูลจากฟอร์ม Register เมื่อผู้ใช้ส่งข้อมูล (HTTP POST)
+        [HttpPost]
         public IActionResult Register(string username, string email, string password, string cpassword)
         {
-
-            // ตรวจสอบว่ารหัสผ่านทั้งสองตรงกันหรือไม่
+            // ตรวจสอบว่ารหัสผ่านทั้งสองช่องตรงกันหรือไม่
             if (password != cpassword)
             {
-                ModelState.AddModelError("Cpassword", "Passwords do not match."); // ระบุชื่อฟิลด์ที่มีข้อผิดพลาด
+                // เพิ่มข้อความข้อผิดพลาดลงใน ModelState หากรหัสผ่านไม่ตรงกัน
+                ModelState.AddModelError("Cpassword", "Passwords do not match.");
             }
 
-            // ตรวจสอบ ModelState ว่ามีข้อผิดพลาดหรือไม่
-            if (!ModelState.IsValid)
-            {
-                return View(); // ส่งคืน View หากมีข้อผิดพลาด
-            }
+            // สามารถเพิ่มขั้นตอนการสร้างบัญชีผู้ใช้ที่นี่ (การเชื่อมต่อฐานข้อมูลหรือการบันทึกข้อมูล)
 
-            // เพิ่มการสร้างบัญชีผู้ใช้ที่นี่
-
-            // ถ้าทุกอย่างถูกต้อง ให้เปลี่ยนเส้นทางไปยังหน้าที่ต้องการ
+            // หากข้อมูลผ่านการตรวจสอบ ให้เปลี่ยนเส้นทางไปยังหน้าหลัก
             return RedirectToAction("Index", "Home");
         }
+
+        // แสดงหน้า Access Denied (ในกรณีที่ผู้ใช้ไม่มีสิทธิ์เข้าถึงบางส่วนของเว็บ)
         public IActionResult AccessDenied()
         {
             return View();
         }
-
     }
 }

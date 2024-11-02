@@ -38,6 +38,8 @@
                 <a href="/Account/Register">Don't have an account? Register here.</a>
             </div>
 
+            @Html.ValidationMessage("admin & password" , "", new { @class = "text-danger" })
+
         </form>
     </div>
 </div>

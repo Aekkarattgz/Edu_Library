@@ -7,8 +7,6 @@
         public string Detail { get; set; }
         public string Author { get; set; }
         public string CoverImage { get; set; }
-        public int CategoryId { get; set; }
-
-        
+        public int CategoryId { get; set; }       
     }
 }

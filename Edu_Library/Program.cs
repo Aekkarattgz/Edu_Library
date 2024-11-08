@@ -1,7 +1,15 @@
-var builder = WebApplication.CreateBuilder(args);
+﻿var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// เพิ่มการกำหนดค่า Authentication โดยใช้ Cookies
+builder.Services.AddAuthentication("Cookies") // ตั้งชื่อ Scheme เป็น "Cookies"
+    .AddCookie("Cookies", options =>
+    {
+        options.LoginPath = "/Account/Login"; // ตั้งเส้นทางหน้า Login
+        options.LogoutPath = "/Account/Logout"; // ตั้งเส้นทางหน้า Logout
+    });
 
 var app = builder.Build();
 
@@ -13,11 +21,15 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
+// เรียกใช้ Authentication และ Authorization Middleware
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

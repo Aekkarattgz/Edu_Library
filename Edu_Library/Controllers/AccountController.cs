@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Edu_Library.Controllers
@@ -59,6 +60,16 @@ namespace Edu_Library.Controllers
         public IActionResult AccessDenied()
         {
             return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+            //Task เป็นชนิดข้อมูลที่ใช้รองรับการทำงานแบบ asynchronous ซึ่งจะส่งคืนผลลัพธ์ในอนาคตเมื่อเมธอดทำงานเสร็จ
+        {
+            // ลบข้อมูลการยืนยันตัวตน (เช่น การออกจากระบบ)
+            await HttpContext.SignOutAsync();
+
+            // เปลี่ยนเส้นทางไปที่หน้าล็อกอินหลังจากออกจากระบบ
+            return RedirectToAction("Login", "Account");
         }
     }
 }

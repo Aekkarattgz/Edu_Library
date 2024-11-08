@@ -971,3 +971,4 @@ D:\Aekkarat\New folder\Edu_Library\Edu_Library\obj\Debug\net8.0\scopedcss\projec
 D:\Aekkarat\New folder\Edu_Library\Edu_Library\obj\Debug\net8.0\Edu_Libr.F7F3F3CB.Up2Date
 D:\Aekkarat\New folder\Edu_Library\Edu_Library\obj\Debug\net8.0\Edu_Library.genruntimeconfig.cache
 D:\Aekkarat\New folder\Edu_Library\Edu_Library\obj\Debug\net8.0\ref\Edu_Library.dll
+D:\Edu_Library\Edu_Library\obj\Debug\net8.0\scopedcss\Views\Shared\Login_Layout.cshtml.rz.scp.css

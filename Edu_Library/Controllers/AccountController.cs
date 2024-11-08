@@ -14,13 +14,13 @@ namespace Edu_Library.Controllers
 
         // รับข้อมูลจากฟอร์ม Login เมื่อผู้ใช้ส่งข้อมูล (HTTP POST)
         [HttpPost]
-        public IActionResult Login(string username, string password, bool rememberMe)
+        public IActionResult Login(string Username, string Password, bool RememberMe)
         {
             // ตรวจสอบข้อมูลที่ผู้ใช้กรอก (เพียงตัวอย่างการตรวจสอบข้อมูลแบบฮาร์ดโค้ด)
-            if (username == "admin" && password == "password") // ใช้แค่เพื่อการทดสอบ
+            if (Username == "admin" && Password == "password") // ใช้แค่เพื่อการทดสอบ
             {
                 // หากข้อมูลถูกต้อง ให้เปลี่ยนเส้นทางไปยังหน้าหลัก
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Books");
             }
 
             // หากข้อมูลไม่ถูกต้อง เพิ่มข้อความข้อผิดพลาดลงใน ModelState
@@ -39,19 +39,20 @@ namespace Edu_Library.Controllers
 
         // รับข้อมูลจากฟอร์ม Register เมื่อผู้ใช้ส่งข้อมูล (HTTP POST)
         [HttpPost]
-        public IActionResult Register(string username, string email, string password, string cpassword)
+        public IActionResult Register(string Username, string Email, string Passeord, string cpassword)
         {
             // ตรวจสอบว่ารหัสผ่านทั้งสองช่องตรงกันหรือไม่
-            if (password != cpassword)
+            if (Passeord != cpassword)
             {
                 // เพิ่มข้อความข้อผิดพลาดลงใน ModelState หากรหัสผ่านไม่ตรงกัน
                 ModelState.AddModelError("Cpassword", "Passwords do not match.");
+                return View();
             }
 
             // สามารถเพิ่มขั้นตอนการสร้างบัญชีผู้ใช้ที่นี่ (การเชื่อมต่อฐานข้อมูลหรือการบันทึกข้อมูล)
 
             // หากข้อมูลผ่านการตรวจสอบ ให้เปลี่ยนเส้นทางไปยังหน้าหลัก
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Books");
         }
 
         // แสดงหน้า Access Denied (ในกรณีที่ผู้ใช้ไม่มีสิทธิ์เข้าถึงบางส่วนของเว็บ)

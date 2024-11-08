@@ -7715,19 +7715,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\s6402041520201\\.nuget\\packages\\": {}
+    "C:\\Users\\E-TECH\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
+      "projectUniqueName": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
       "projectName": "Edu_Library",
-      "projectPath": "D:\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
-      "packagesPath": "C:\\Users\\s6402041520201\\.nuget\\packages\\",
-      "outputPath": "D:\\Edu_Library\\Edu_Library\\obj\\",
+      "projectPath": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
+      "packagesPath": "C:\\Users\\E-TECH\\.nuget\\packages\\",
+      "outputPath": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\s6402041520201\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\E-TECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

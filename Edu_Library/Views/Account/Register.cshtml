@@ -3,10 +3,11 @@
     ViewData["Title"] = "Register";
 }
 
-<h1>Register</h1>
-<div class="container">
-    <div class="row">
-        <form action="/Account/Register"  method="post">
+<h1 class="text-center">สมัครสมาชิก</h1>
+<div class="row justify-content-center">
+    <!--ใช้ class cloum 6-->
+    <div class="col-md-6 col-lg-4">
+        <form action="/Account/Register" method="post" class="border p-4 rounded shadow-sm">
             <div class="form-group">
                 <label for="username" >Entert your username</label>
                 <input type="text" id="username" name="Username" class="form-control" placeholder="Entert your username" required/>
@@ -21,7 +22,7 @@
             </div>
             <div class="form-group">
                 <label for="cpassword">Confirm your password by entering it again.</label>
-                <input type="password" id="cpassword" name="Cpassword" class="form-control" placeholder="Confirm your password by entering it again." required />
+                <input type="password" id="cpassword" name="cpassword" class="form-control" placeholder="Confirm your password by entering it again." required />
                 @Html.ValidationMessage("Cpassword", "", new { @class = "text-danger" }) 
             </div>
             <br />

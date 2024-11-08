@@ -3,12 +3,12 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>เข้าสู่ระบบ</h1>
+<h1 class="text-center">เข้าสู่ระบบ</h1>
 
-<div class="row">
+<div class="row justify-content-center">
     <!--ใช้ class cloum 6-->
-    <div class="col-md-6">
-        <form action="/Account/Login" method="post">
+    <div class="col-md-6 col-lg-4">
+        <form action="/Account/Login" method="post" class="border p-4 rounded shadow-sm">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="Username" class="form-control" placeholder="Enter your Username" required />

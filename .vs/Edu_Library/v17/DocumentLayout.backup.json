@@ -1,38 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Edu_Library\\",
+  "WorkspaceRootPath": "D:\\Aekkarat\\New folder\\Edu_Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\models\\category_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\models\\category_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\edu_library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\edu_library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\models\\book_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\models\\book_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\models\\user_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\models\\user_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\models\\book_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\models\\book_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\models\\category_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\models\\category_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\models\\user_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\models\\user_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\edu_library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\edu_library.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,105 +54,145 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edu_Library",
-              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
-              "RelativeDocumentMoniker": "Edu_Library\\Edu_Library.csproj",
-              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
-              "RelativeToolTip": "Edu_Library\\Edu_Library.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-03T07:42:56.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Category_tb.cs",
-              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Models\\Category_tb.cs",
-              "RelativeDocumentMoniker": "Edu_Library\\Models\\Category_tb.cs",
-              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Models\\Category_tb.cs",
-              "RelativeToolTip": "Edu_Library\\Models\\Category_tb.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T07:05:04.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Book_tb.cs",
-              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Models\\Book_tb.cs",
-              "RelativeDocumentMoniker": "Edu_Library\\Models\\Book_tb.cs",
-              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Models\\Book_tb.cs",
-              "RelativeToolTip": "Edu_Library\\Models\\Book_tb.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T07:04:44.07Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User_tb.cs",
-              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Models\\User_tb.cs",
-              "RelativeDocumentMoniker": "Edu_Library\\Models\\User_tb.cs",
-              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Models\\User_tb.cs",
-              "RelativeToolTip": "Edu_Library\\Models\\User_tb.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T07:04:24.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Register.cshtml",
-              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Edu_Library\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T01:16:57.192Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Edu_Library\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACQAAAAkAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "Edu_Library\\Views\\Books\\Index.cshtml",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "Edu_Library\\Views\\Books\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T01:16:55.553Z"
+              "WhenOpened": "2024-11-07T07:07:48.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Edu_Library\\Controllers\\BooksController.cs",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "Edu_Library\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T07:07:27.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Edu_Library\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Edu_Library\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowDwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwC8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T01:08:08.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
+              "Title": "Category_tb.cs",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Models\\Category_tb.cs",
+              "RelativeDocumentMoniker": "Edu_Library\\Models\\Category_tb.cs",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Models\\Category_tb.cs",
+              "RelativeToolTip": "Edu_Library\\Models\\Category_tb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:05:04.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Edu_Library\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T01:16:57.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Edu_Library\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-02T01:16:55.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Program.cs",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Program.cs",
               "RelativeDocumentMoniker": "Edu_Library\\Program.cs",
-              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Program.cs",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Program.cs",
               "RelativeToolTip": "Edu_Library\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T01:04:22.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Book_tb.cs",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Models\\Book_tb.cs",
+              "RelativeDocumentMoniker": "Edu_Library\\Models\\Book_tb.cs",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Models\\Book_tb.cs",
+              "RelativeToolTip": "Edu_Library\\Models\\Book_tb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:04:44.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User_tb.cs",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Models\\User_tb.cs",
+              "RelativeDocumentMoniker": "Edu_Library\\Models\\User_tb.cs",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Models\\User_tb.cs",
+              "RelativeToolTip": "Edu_Library\\Models\\User_tb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:04:24.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edu_Library.csproj",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
+              "RelativeDocumentMoniker": "Edu_Library\\Edu_Library.csproj",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
+              "RelativeToolTip": "Edu_Library\\Edu_Library.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-03T07:42:56.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Edu_Library\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Edu_Library\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T08:12:08.852Z"
             }
           ]
         }

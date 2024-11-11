@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Aekkarat\\New folder\\Edu_Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\aekkarat\\new folder\\edu_library\\edu_library\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Register.cshtml",
@@ -118,18 +118,17 @@
               "RelativeToolTip": "Edu_Library\\Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T01:16:57.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T01:16:57.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Login.cshtml",
               "ToolTip": "D:\\Aekkarat\\New folder\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Edu_Library\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-02T01:16:55.553Z",
               "EditorCaption": ""

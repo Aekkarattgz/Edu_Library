@@ -20,17 +20,17 @@ html {
 body {
     margin-bottom: 60px;
 }
-    /* Light Mode */
-    body.light-mode {
-        background-color: white;
-        color: black;
-    }
+/* Light Mode */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
 
     /* Dark Mode */
-    body.dark-mode {
-        background-color: #272727;
-        color: white;
-    }
+body.dark-mode {
+    background-color: #272727;
+    color: white;
+}
 
 /* Navbar specific */
 .navbar-light-mode {
@@ -68,5 +68,9 @@ body.dark-mode table {
 label{
     font-size:larger
 }
+.card-title{
+    color :black;
+}
+
 
 

@@ -1,32 +1,25 @@
-﻿@model IEnumerable<Edu_Library.Models.Book_tb>  
-@* ระบุว่า Model ที่ใช้ใน View นี้คือรายการของ Book_tb *@
+﻿@model IEnumerable<Edu_Library.Models.Book_tb> 
+@* <!-- กำหนดว่า Model ที่ใช้ใน View นี้เป็นรายการของ Book_tb --> *@
 
-@{
-    ViewData["Title"] = "Index";
-    // ตั้งชื่อ Title ของหน้าเป็น "Index"
-}
-
-<div class="container">
-    <!-- สร้าง container สำหรับจัดตำแหน่งเนื้อหาให้อยู่กึ่งกลาง -->
-    <div class="row">
-        <!-- สร้าง row เพื่อวาง card ของหนังสือแต่ละเล่ม -->
-        @foreach (var book in Model) // วนลูปเพื่อแสดงข้อมูลหนังสือแต่ละรายการ
+<div class="container"> <!-- สร้าง container สำหรับจัดตำแหน่ง -->
+    <div class="row"> <!-- เริ่มต้น row สำหรับแสดงข้อมูลหนังสือ -->
+        @foreach (var book in Model) 
+        @* <!-- วนลูปข้อมูลหนังสือแต่ละเล่ม --> *@
         {
-            <div class="col-md-3 mb-4">
-                <!-- ตั้งค่าความกว้างของ card แต่ละใบให้เท่ากับ 1/4 ของหน้าจอ (4 cards ต่อแถว) และเพิ่มระยะห่างด้านล่าง -->
-                <div class="card h-100">
-                    <!-- สร้าง card สำหรับแสดงข้อมูลหนังสือแต่ละเล่ม และตั้งค่า h-100 เพื่อให้ความสูงของการ์ดเต็ม 100% -->
-                    <img src="@book.CoverImage" class="card-img-top" alt="@book.Name" style="height: 200px; object-fit: cover;"> 
-                    <!-- แสดงภาพปกหนังสือ โดยปรับขนาดให้สูง 200px และใช้ object-fit: cover เพื่อครอบคลุมพื้นที่ภาพ -->
-                    <div class="card-body">
-                        <!-- ส่วนเนื้อหาของ card -->
-                        <h5 class="card-title">@book.Name</h5> 
-                        <!-- แสดงชื่อหนังสือ -->
-                        <p class="card-text">@book.Detail</p> <!-- แสดงรายละเอียดหนังสือ -->
+            <div class="col-md-3 mb-4"> <!-- กำหนดขนาดของ card ให้อยู่ในคอลัมน์ 1/4 ของหน้าจอ -->
+                <div class="card h-100"> <!-- สร้าง card สำหรับแต่ละหนังสือ -->
+                    <img src="@book.CoverImage" class="card-img-top" alt="@book.Name" style="height: 200px; object-fit: cover;">
+                    <!-- แสดงภาพปกหนังสือโดยใช้ link ของ CoverImage, ปรับขนาดภาพให้เหมาะสม -->
+                    <div class="card-body"> <!-- ส่วนของเนื้อหาภายในการ์ด -->
+                        <h2 class="card-title">@book.Name</h2> <!-- แสดงชื่อหนังสือ -->
+                        <h3 class="card-text">@book.Detail</h3> <!-- แสดงรายละเอียดหนังสือ -->
+                        <h5 class="card-text">
+                            <strong>Category ID:</strong> @book.CategoryId <br /> <!-- แสดง CategoryId ของหนังสือ -->
+                            <strong>Category Name:</strong> @book.Category?.Name <!-- แสดงชื่อหมวดหมู่จาก Navigation Property -->
+                        </h5>
                     </div>
-                    <div class="card-footer">
-                        <!-- ส่วนท้ายของ card สำหรับข้อมูลเพิ่มเติม -->
-                        <small class="text-muted">Author: @book.Author</small> <!-- แสดงชื่อผู้แต่งในฟอร์แมตที่มีสีจางลง -->
+                    <div class="card-footer"> <!-- ส่วนท้ายของการ์ด -->
+                        <small class="text-muted">Author: @book.Author</small> <!-- แสดงชื่อผู้เขียน -->
                     </div>
                 </div>
             </div>

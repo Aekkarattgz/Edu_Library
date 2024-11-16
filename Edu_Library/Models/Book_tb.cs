@@ -11,7 +11,10 @@ namespace Edu_Library.Models
         public string Detail { get; set; }
         public string Author { get; set; }
         public string CoverImage { get; set; }
-        [ForeignKey("CategoryId")]
-        public int CategoryId { get; set; }       
+        // Foreign Key
+        public int CategoryId { get; set; }
+
+        // Navigation Property
+        public Category_tb Category { get; set; }
     }
 }

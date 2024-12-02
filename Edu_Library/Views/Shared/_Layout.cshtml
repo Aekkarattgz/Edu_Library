@@ -36,6 +36,12 @@
                             <button type="submit" class="btn btn-outline-danger">Logout</button> <!-- ปรับสไตล์ให้เด่นขึ้น -->
                         </form>
                     </div>
+                    <script>
+                        // เมื่อผู้ใช้กดปุ่ม logout จะเกิดการรีไดเรกต์ไปหน้า Login
+                        if (performance.navigation.type == 1) {
+                            window.location.href = "/Account/Login"; // ส่งผู้ใช้ไปยังหน้า Login
+                        }
+                    </script>
                 </div>
             </div>
         </nav>

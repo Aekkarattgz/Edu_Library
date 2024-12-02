@@ -1,28 +1,33 @@
-﻿using Edu_Library.Data;
-using Microsoft.AspNetCore.Mvc;
-using Edu_Library.Models;
-using Microsoft.EntityFrameworkCore; // ใช้ Include() เพื่อดึงข้อมูลที่เกี่ยวข้อง
-using System.Collections.Generic;
-using System.Linq;
+﻿using Edu_Library.Data; // นำเข้า namespace สำหรับการเข้าถึง ApplicationDbContext
+using Microsoft.AspNetCore.Mvc; // นำเข้า namespace สำหรับการใช้ Controller และ IActionResult
+using Edu_Library.Models; // นำเข้า namespace สำหรับการใช้โมเดล Book_tb และ Category_tb
+using Microsoft.EntityFrameworkCore; // ใช้ Include() เพื่อดึงข้อมูลที่เกี่ยวข้องระหว่างตาราง
 
 namespace Edu_Library.Controllers
 {
+    // ควบคุมการทำงานที่เกี่ยวข้องกับการแสดงผลข้อมูลหนังสือในระบบ
     public class BooksController : Controller
     {
-        private readonly ApplicationDbContext _context; // ตัวแปรสำหรับการเข้าถึงฐานข้อมูล
+        // ตัวแปร _context ใช้สำหรับการเข้าถึงฐานข้อมูลผ่าน ApplicationDbContext
+        private readonly ApplicationDbContext _context;
+
+        // Constructor ที่รับพารามิเตอร์ context จาก Dependency Injection (DI Container)
         public BooksController(ApplicationDbContext context)
         {
-            _context = context; // กำหนดค่า context จาก DI Container
+            _context = context; // กำหนดค่า _context โดยใช้ค่าที่ได้รับจาก DI
         }
 
+        // Action Method สำหรับแสดงรายการหนังสือทั้งหมด
         public IActionResult Index()
         {
-            // ดึงข้อมูลจากตาราง Book_tb และข้อมูลจากตาราง Category_tb พร้อมกัน
+            // ดึงข้อมูลจากตาราง Book_tb พร้อมกับข้อมูลหมวดหมู่ (Category_tb) ที่เกี่ยวข้อง
+            // ใช้ Include() เพื่อดึงข้อมูลของหมวดหมู่ที่เชื่อมโยงกับแต่ละหนังสือ
             IEnumerable<Book_tb> books = _context.Book_tb
-                .Include(b => b.Category) // ใช้ Include() เพื่อดึงข้อมูลหมวดหมู่ที่เกี่ยวข้องกับแต่ละหนังสือ
-                .ToList(); // แปลงข้อมูลเป็น List
+                .Include(b => b.Category) // ดึงข้อมูลหมวดหมู่ของหนังสือแต่ละเล่ม
+                .ToList(); // แปลงผลลัพธ์เป็น List
 
-            return View(books); // ส่งข้อมูลที่ดึงได้ไปยัง View เพื่อแสดงผล
+            // ส่งข้อมูลที่ได้ไปยัง View เพื่อแสดงผล
+            return View(books); // ส่งรายการหนังสือทั้งหมดไปยัง View
         }
     }
 }

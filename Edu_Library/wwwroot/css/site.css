@@ -1,4 +1,4 @@
-html {
+﻿html {
     font-size: 14px;
 }
 
@@ -68,9 +68,42 @@ body.dark-mode table {
 label{
     font-size:larger
 }
-.card-title{
-    color :black;
+/* Light Mode */
+body.light-mode .card {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd; /* สามารถปรับสี border ตามต้องการ */
 }
+
+/* Dark Mode */
+body.dark-mode .card {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444; /* ปรับ border สีเข้มขึ้นในโหมด dark */
+}
+/* Light Mode */
+body.light-mode .card-body {
+    background-color: #f9f9f9; /* สีพื้นหลังอ่อน */
+    color: black;
+}
+
+/* Dark Mode */
+body.dark-mode .card-body {
+    background-color: #444; /* สีพื้นหลังเข้ม */
+    color: white;
+}
+/* Light Mode */
+body.light-mode .card .card-title,
+body.light-mode .card .card-text {
+    color: black; /* สีข้อความที่มืดกว่า */
+}
+
+/* Dark Mode */
+body.dark-mode .card .card-title,
+body.dark-mode .card .card-text {
+    color: white; /* สีข้อความที่สว่างกว่าในโหมด dark */
+}
+
 
 
 

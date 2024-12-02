@@ -1,22 +1,28 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Edu_Library.Models;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.EntityFrameworkCore; // นำเข้า namespace สำหรับการใช้ Entity Framework Core
+using Edu_Library.Models; // นำเข้า namespace สำหรับการใช้โมเดลที่กำหนดไว้
+using Microsoft.Extensions.Options; // นำเข้า namespace สำหรับการใช้ Options
+
 namespace Edu_Library.Data
 {
-    //ตัว constructor นี้เป็นวิธีที่เรากำหนดค่าให้กับคลาส ApplicationDbContext ซึ่งเป็นคลาสที่สืบทอดมาจาก DbContext ของ Entity Framework Core
-
+    // คลาส ApplicationDbContext สืบทอดมาจาก DbContext ของ Entity Framework Core
+    // ซึ่งทำหน้าที่เชื่อมต่อกับฐานข้อมูลและกำหนด DbSet สำหรับตารางต่างๆ
     public class ApplicationDbContext : DbContext
     {
+        // ตัว constructor นี้ใช้เพื่อกำหนดค่าการตั้งค่าต่างๆ ของ DbContext
+        // พารามิเตอร์ options จะถูกกำหนดค่าผ่าน Dependency Injection 
+        // โดยใน options จะมีการตั้งค่าการเชื่อมต่อกับฐานข้อมูล
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-        //DbContextOptions เป็นคลาสที่เก็บข้อมูลการตั้งค่าทั้งหมดที่ DbContext จะต้องใช้
-        //พารามิเตอร์นี้(options) จะถูกกำหนดค่าจากภายนอก ผ่าน Dependency Injection ซึ่งช่วยให้เราไม่ต้องกำหนดค่าภายในคลาส ApplicationDbContext เอง
-        //ข้อมูลใน options อาจประกอบด้วยการตั้งค่าการเชื่อมต่อกับฐานข้อมูล
         {
-
+            // base(options) เรียก constructor ของ DbContext เพื่อส่งการตั้งค่าการเชื่อมต่อฐานข้อมูลที่ได้รับมา
         }
-        public DbSet<Book_tb> Book_tb { get; set; }
-        public DbSet<Category_tb> Category_tb { get; set; }
-        public DbSet<User_tb> User_tb { get; set; }
 
+        // DbSet สำหรับตาราง Book_tb ในฐานข้อมูล
+        public DbSet<Book_tb> Book_tb { get; set; }
+
+        // DbSet สำหรับตาราง Category_tb ในฐานข้อมูล
+        public DbSet<Category_tb> Category_tb { get; set; }
+
+        // DbSet สำหรับตาราง User_tb ในฐานข้อมูล
+        public DbSet<User_tb> User_tb { get; set; }
     }
 }

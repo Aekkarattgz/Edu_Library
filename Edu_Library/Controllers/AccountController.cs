@@ -1,74 +1,132 @@
-﻿using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
+﻿using Microsoft.AspNetCore.Authentication; // นำเข้า namespace สำหรับการใช้ Authentication
+using Microsoft.AspNetCore.Authentication.Cookies; // นำเข้า namespace สำหรับใช้ Cookie-based Authentication
+using Microsoft.AspNetCore.Mvc; // นำเข้า namespace สำหรับการทำงานกับ MVC
+using System.Security.Claims; // นำเข้า namespace สำหรับการสร้าง Claims เพื่อใช้ในการ Authentication
+using Edu_Library.Data; // นำเข้า namespace สำหรับการเข้าถึงฐานข้อมูล
+using Edu_Library.Models; // นำเข้า namespace สำหรับใช้โมเดล User_tb
 
 namespace Edu_Library.Controllers
 {
+    // คลาสนี้จัดการการทำงานที่เกี่ยวข้องกับการลงชื่อเข้าใช้ (Login) และการสมัครสมาชิก (Register)
     public class AccountController : Controller
     {
-        // แสดงฟอร์มหน้า Login
+        // ตัวแปร _context ใช้สำหรับการเข้าถึงฐานข้อมูลผ่าน ApplicationDbContext
+        private readonly ApplicationDbContext _context;
+
+        // Constructor สำหรับการ Inject ApplicationDbContext จาก DI Container
+        public AccountController(ApplicationDbContext context)
+        {
+            _context = context; // กำหนดค่า _context จาก DI
+        }
+
+        // Action Method ที่แสดงฟอร์ม Login (HTTP GET)
         [HttpGet]
         public IActionResult Login()
         {
-            return View();
+
+            return View(); // แสดงหน้า Login
         }
 
-        // รับข้อมูลจากฟอร์ม Login เมื่อผู้ใช้ส่งข้อมูล (HTTP POST)
+        // Action Method ที่รับข้อมูลจากฟอร์ม Login (HTTP POST)
         [HttpPost]
-        public IActionResult Login(string Username, string Password, bool RememberMe)
+        public async Task<IActionResult> Login(string UsernameOrEmail, string Password, bool RememberMe)
         {
-            // ตรวจสอบข้อมูลที่ผู้ใช้กรอก (เพียงตัวอย่างการตรวจสอบข้อมูลแบบฮาร์ดโค้ด)
-            if (Username == "admin" && Password == "password") // ใช้แค่เพื่อการทดสอบ
+            // ค้นหาผู้ใช้จากฐานข้อมูลที่มีชื่อผู้ใช้หรืออีเมลตรงกับข้อมูลที่กรอก และรหัสผ่านตรงกับที่กรอก
+            var user = _context.User_tb
+                .FirstOrDefault(u => (u.UserName == UsernameOrEmail || u.Email == UsernameOrEmail) && u.Password == Password);
+
+            // ถ้าหาผู้ใช้ไม่พบ
+            if (user == null)
             {
-                // หากข้อมูลถูกต้อง ให้เปลี่ยนเส้นทางไปยังหน้าหลัก
-                return RedirectToAction("Index", "Books");
+                ViewBag.ErrorMessage = "ชื่อผู้ใช้หรืออีเมล หรือรหัสผ่านไม่ถูกต้อง"; // แสดงข้อความผิดพลาด
+                return View(); // ส่งกลับไปที่หน้าฟอร์ม Login
             }
 
-            // หากข้อมูลไม่ถูกต้อง เพิ่มข้อความข้อผิดพลาดลงใน ModelState
-            ModelState.AddModelError("admin & password", "Invalid username or password.");
-
-            // ส่ง View กลับพร้อมแสดงข้อผิดพลาด
-            return View();
-        }
-
-        // แสดงฟอร์มหน้า Register
-        [HttpGet]
-        public IActionResult Register()
-        {
-            return View();
-        }
-
-        // รับข้อมูลจากฟอร์ม Register เมื่อผู้ใช้ส่งข้อมูล (HTTP POST)
-        [HttpPost]
-        public IActionResult Register(string Username, string Email, string Passeord, string cpassword)
-        {
-            // ตรวจสอบว่ารหัสผ่านทั้งสองช่องตรงกันหรือไม่
-            if (Passeord != cpassword)
+            // สร้าง Claims สำหรับการยืนยันตัวตน
+            var claims = new[]
             {
-                // เพิ่มข้อความข้อผิดพลาดลงใน ModelState หากรหัสผ่านไม่ตรงกัน
-                ModelState.AddModelError("Cpassword", "Passwords do not match.");
-                return View();
-            }
+                new Claim(ClaimTypes.Name, user.UserName), // กำหนด Claim สำหรับชื่อผู้ใช้
+                new Claim(ClaimTypes.Email, user.Email), // กำหนด Claim สำหรับอีเมล
+            };
 
-            // สามารถเพิ่มขั้นตอนการสร้างบัญชีผู้ใช้ที่นี่ (การเชื่อมต่อฐานข้อมูลหรือการบันทึกข้อมูล)
+            // สร้าง ClaimsIdentity ด้วย Authentication Scheme แบบ Cookies
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-            // หากข้อมูลผ่านการตรวจสอบ ให้เปลี่ยนเส้นทางไปยังหน้าหลัก
+            // สร้าง ClaimsPrincipal จาก ClaimsIdentity
+            var principal = new ClaimsPrincipal(identity);
+
+            // ลงชื่อเข้าใช้ (Sign In) โดยใช้ Cookie Authentication Scheme
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
+            // หลังจากลงชื่อเข้าใช้สำเร็จ เปลี่ยนเส้นทางไปหน้า Index ของ Books
             return RedirectToAction("Index", "Books");
         }
 
-        // แสดงหน้า Access Denied (ในกรณีที่ผู้ใช้ไม่มีสิทธิ์เข้าถึงบางส่วนของเว็บ)
+        // Action Method ที่แสดงฟอร์มสมัครสมาชิก (HTTP GET)
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View(); // แสดงฟอร์มสมัครสมาชิก
+        }
+
+        // Action Method ที่รับข้อมูลจากฟอร์มสมัครสมาชิก (HTTP POST)
+        [HttpPost]
+        public IActionResult Register(string Username, string Email, string Password, string cpassword)
+        {
+            // ตรวจสอบว่า รหัสผ่านที่กรอกสองครั้งตรงกันหรือไม่
+            if (Password != cpassword)
+            {
+                ModelState.AddModelError("Cpassword", "Passwords do not match."); // ถ้าไม่ตรงให้แสดงข้อความผิดพลาด
+                return View(); // ส่งกลับไปที่หน้าฟอร์มสมัครสมาชิก
+            }
+
+            // ตรวจสอบว่ามีผู้ใช้หรืออีเมลนี้ในระบบแล้วหรือไม่
+            if (_context.User_tb.Any(u => u.UserName == Username || u.Email == Email))
+            {
+                ModelState.AddModelError("DuplicateUser", "Username or Email already exists."); // ถ้ามีให้แสดงข้อความผิดพลาด
+                return View();
+            }
+
+            try
+            {
+                // สร้างผู้ใช้ใหม่
+                var newUser = new User_tb
+                {
+                    UserName = Username, // กำหนดชื่อผู้ใช้
+                    Email = Email,       // กำหนดอีเมล
+                    Password = Password, // เก็บรหัสผ่าน (ควรเก็บแบบเข้ารหัสในโปรดักชัน)
+                    Role = "User"        // กำหนดบทบาทผู้ใช้เป็น User
+                };
+
+                _context.User_tb.Add(newUser); // เพิ่มผู้ใช้ใหม่ในฐานข้อมูล
+                _context.SaveChanges(); // บันทึกการเปลี่ยนแปลงในฐานข้อมูล
+
+                // เปลี่ยนเส้นทางไปที่หน้า Login หลังจากสมัครสมาชิกสำเร็จ
+                return RedirectToAction("Login", "Account");
+            }
+            catch (Exception ex)
+            {
+                // ถ้ามีข้อผิดพลาดในการสมัครสมาชิก ให้แสดงข้อความผิดพลาด
+                ViewBag.ErrorMessage = ex.InnerException?.Message ?? ex.Message;
+                return View();
+            }
+        }
+
+        // Action Method สำหรับหน้า Access Denied (กรณีที่ผู้ใช้ไม่มีสิทธิ์เข้าถึงบางส่วนของเว็บ)
         public IActionResult AccessDenied()
         {
-            return View();
+            return View(); // แสดงหน้า Access Denied
         }
+
+        // Action Method สำหรับการออกจากระบบ (Logout)
+        
         [HttpPost]
         public async Task<IActionResult> Logout()
-            //Task เป็นชนิดข้อมูลที่ใช้รองรับการทำงานแบบ asynchronous ซึ่งจะส่งคืนผลลัพธ์ในอนาคตเมื่อเมธอดทำงานเสร็จ
         {
-            // ลบข้อมูลการยืนยันตัวตน (เช่น การออกจากระบบ)
-            await HttpContext.SignOutAsync();
+            // ลบข้อมูลการยืนยันตัวตนของผู้ใช้
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
-            // เปลี่ยนเส้นทางไปที่หน้าล็อกอินหลังจากออกจากระบบ
+            // เปลี่ยนเส้นทางไปที่หน้า Login หลังจากออกจากระบบ
             return RedirectToAction("Login", "Account");
         }
     }

@@ -1,58 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\OS\\Desktop\\Edu_Library\\",
+  "WorkspaceRootPath": "D:\\Edu_Library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\models\\book_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\models\\book_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\models\\category_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\models\\category_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\models\\user_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|d:\\edu_library\\edu_library\\models\\user_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\models\\user_tb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|c:\\users\\os\\desktop\\edu_library\\edu_library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00252753-1A69-4D3C-A69D-B13979DDF165}|Edu_Library\\Edu_Library.csproj|solutionrelative:edu_library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,169 +42,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Views\\Books\\Index.cshtml",
-              "RelativeDocumentMoniker": "Edu_Library\\Views\\Books\\Index.cshtml",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Views\\Books\\Index.cshtml*",
-              "RelativeToolTip": "Edu_Library\\Views\\Books\\Index.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Edu_Library\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Edu_Library\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-13T16:22:25.863Z",
+              "WhenOpened": "2024-12-02T15:23:40.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Program.cs",
+              "RelativeDocumentMoniker": "Edu_Library\\Program.cs",
+              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Program.cs",
+              "RelativeToolTip": "Edu_Library\\Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T15:13:19.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Controllers\\BooksController.cs",
+              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "Edu_Library\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Controllers\\BooksController.cs",
+              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Controllers\\BooksController.cs",
               "RelativeToolTip": "Edu_Library\\Controllers\\BooksController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAuwA8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T16:08:59.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User_tb.cs",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Models\\User_tb.cs",
-              "RelativeDocumentMoniker": "Edu_Library\\Models\\User_tb.cs",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Models\\User_tb.cs",
-              "RelativeToolTip": "Edu_Library\\Models\\User_tb.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T07:04:24.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Category_tb.cs",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Models\\Category_tb.cs",
-              "RelativeDocumentMoniker": "Edu_Library\\Models\\Category_tb.cs",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Models\\Category_tb.cs",
-              "RelativeToolTip": "Edu_Library\\Models\\Category_tb.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T07:05:04.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Edu_Library\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Edu_Library\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T03:03:10.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "Edu_Library\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "Edu_Library\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-13T17:00:49.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Edu_Library\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T01:16:55.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Edu_Library\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Edu_Library\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAmwBAAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T01:08:08.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Book_tb.cs",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Models\\Book_tb.cs",
-              "RelativeDocumentMoniker": "Edu_Library\\Models\\Book_tb.cs",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Models\\Book_tb.cs",
-              "RelativeToolTip": "Edu_Library\\Models\\Book_tb.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "User_tb.cs",
+              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Models\\User_tb.cs",
+              "RelativeDocumentMoniker": "Edu_Library\\Models\\User_tb.cs",
+              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Models\\User_tb.cs",
+              "RelativeToolTip": "Edu_Library\\Models\\User_tb.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T07:04:44.07Z",
+              "WhenOpened": "2024-11-02T07:04:24.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Edu_Library\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Edu_Library\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T04:03:02.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\appsettings.json",
-              "RelativeDocumentMoniker": "Edu_Library\\appsettings.json",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\appsettings.json",
-              "RelativeToolTip": "Edu_Library\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-11T03:09:11.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Edu_Library\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Edu_Library\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Edu_Library\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T01:16:57.192Z"
+              "WhenOpened": "2024-11-02T01:16:55.553Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Program.cs",
-              "RelativeDocumentMoniker": "Edu_Library\\Program.cs",
-              "ToolTip": "C:\\Users\\OS\\Desktop\\Edu_Library\\Edu_Library\\Program.cs",
-              "RelativeToolTip": "Edu_Library\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAswCoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T01:04:22.434Z"
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "Edu_Library\\Views\\Books\\Index.cshtml",
+              "ToolTip": "D:\\Edu_Library\\Edu_Library\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "Edu_Library\\Views\\Books\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T16:22:25.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Edu_Library\\Edu_Library\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Edu_Library\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Edu_Library\\Edu_Library\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Edu_Library\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAswGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-13T17:00:49.463Z",
+              "EditorCaption": ""
             }
           ]
         }

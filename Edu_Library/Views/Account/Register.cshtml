@@ -1,40 +1,49 @@
-﻿
-@{
+﻿@{
+    // กำหนด Layout ที่ใช้ในหน้าเว็บนี้ให้เป็น "Login_Layout"
     Layout = "Login_Layout";
+    // กำหนดชื่อของหน้า (Title) ให้แสดงเป็น "Register"
     ViewData["Title"] = "Register";
 }
 
+<!-- หัวข้อของหน้าเว็บ -->
 <h1 class="text-center">สมัครสมาชิก</h1>
+
+<!-- การจัดการเลย์เอาต์ของฟอร์มให้แสดงอยู่ตรงกลางของหน้า -->
 <div class="row justify-content-center">
-    <!--ใช้ class cloum 6-->
+    <!-- ใช้ class col-md-6 เพื่อให้ฟอร์มแสดงในขนาดที่พอดี -->
     <div class="col-md-6 col-lg-4">
+        <!-- ฟอร์มสำหรับสมัครสมาชิก -->
         <form action="/Account/Register" method="post" class="border p-4 rounded shadow-sm">
+            <!-- ฟอร์มกลุ่มสำหรับรับข้อมูลชื่อผู้ใช้งาน -->
             <div class="form-group">
-                <label for="username" >Entert your username</label>
-                <input type="text" id="username" name="Username" class="form-control" placeholder="Entert your username" required/>
+                <label for="username">Enter your username</label>
+                <input type="text" id="username" name="Username" class="form-control" placeholder="Enter your username" required />
             </div>
+            <!-- ฟอร์มกลุ่มสำหรับรับข้อมูลอีเมล -->
             <div class="form-group">
-                <label for="email">Entert your email address</label>
-                <input type="email" id="email" name="Email" class="form-control" placeholder="email address" required />
+                <label for="email">Enter your email address</label>
+                <input type="email" id="email" name="Email" class="form-control" placeholder="Email address" required />
             </div>
+            <!-- ฟอร์มกลุ่มสำหรับรับข้อมูลรหัสผ่าน -->
             <div class="form-group">
-                <label for="password">Entert your password</label>
-                <input type="password" id="password" name="Passeord" class="form-control" placeholder="Entert your password" required />
+                <label for="password">Enter your password</label>
+                <input type="password" id="password" name="Password" class="form-control" placeholder="Enter your password" required />
             </div>
+            <!-- ฟอร์มกลุ่มสำหรับยืนยันรหัสผ่าน -->
             <div class="form-group">
                 <label for="cpassword">Confirm your password by entering it again.</label>
                 <input type="password" id="cpassword" name="cpassword" class="form-control" placeholder="Confirm your password by entering it again." required />
-                @Html.ValidationMessage("Cpassword", "", new { @class = "text-danger" }) 
+                <!-- ข้อความแจ้งเตือนการยืนยันรหัสผ่านไม่ตรงกัน -->
+                @Html.ValidationMessage("Cpassword", "", new { @class = "text-danger" })
+                <!-- ข้อความแจ้งเตือนกรณีชื่อผู้ใช้ซ้ำ -->
+                @Html.ValidationMessage("DuplicateUser", "", new { @class = "text-danger" })
             </div>
             <br />
-            <div class="form-group ">
-                <button type="submit" class="btn btn-primary ">Register</button>
-            
-                <a class="btn btn-dark " href="/Account/Login">Back to login</a>
+            <!-- ปุ่มสำหรับส่งข้อมูลฟอร์มและลิงก์กลับไปที่หน้าล็อกอิน -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Register</button>
+                <a class="btn btn-dark" href="/Account/Login">Back to login</a>
             </div>
-
         </form>
-
     </div>
-
 </div>

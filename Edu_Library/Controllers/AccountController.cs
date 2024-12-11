@@ -23,6 +23,11 @@ namespace Edu_Library.Controllers
         [HttpGet]
         public IActionResult Login()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                // ถ้าผู้ใช้ล็อกอินอยู่แล้ว ให้รีไดเรกต์ไปที่หน้า dashboard หรือหน้าอื่น
+                return RedirectToAction("Index", "Home");
+            }
 
             return View(); // แสดงหน้า Login
         }
@@ -31,7 +36,7 @@ namespace Edu_Library.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(string UsernameOrEmail, string Password, bool RememberMe)
         {
-            // ค้นหาผู้ใช้จากฐานข้อมูลที่มีชื่อผู้ใช้หรืออีเมลตรงกับข้อมูลที่กรอก และรหัสผ่านตรงกับที่กรอก
+            // ค้นหาผู้ใช้จากฐานข้อมูลที่มีชื่อผู้ใช้หรืออีเมลตรงกับข้อมูลที่กรอก
             var user = _context.User_tb
                 .FirstOrDefault(u => (u.UserName == UsernameOrEmail || u.Email == UsernameOrEmail) && u.Password == Password);
 
@@ -48,19 +53,35 @@ namespace Edu_Library.Controllers
                 new Claim(ClaimTypes.Name, user.UserName), // กำหนด Claim สำหรับชื่อผู้ใช้
                 new Claim(ClaimTypes.Email, user.Email), // กำหนด Claim สำหรับอีเมล
             };
-
             // สร้าง ClaimsIdentity ด้วย Authentication Scheme แบบ Cookies
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
             // สร้าง ClaimsPrincipal จาก ClaimsIdentity
             var principal = new ClaimsPrincipal(identity);
 
-            // ลงชื่อเข้าใช้ (Sign In) โดยใช้ Cookie Authentication Scheme
-            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+            // ตั้งค่าการจดจำผู้ใช้
+            var authProperties = new AuthenticationProperties
+            {
+                IsPersistent = RememberMe, // ถ้า RememberMe เป็น true จะเก็บ Cookie ไว้ถาวร
+                ExpiresUtc = DateTime.UtcNow.AddDays(RememberMe ? 30 : 1) // กำหนดอายุ Cookie
+            };
 
-            // หลังจากลงชื่อเข้าใช้สำเร็จ เปลี่ยนเส้นทางไปหน้า Index ของ Books
-            return RedirectToAction("Index", "Books");
+            // ลงชื่อเข้าใช้ (Sign In) โดยใช้ Cookie Authentication Scheme
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, authProperties);
+
+            // ตรวจสอบ Role ของผู้ใช้และรีไดเรกต์ไปยังหน้าต่างๆ
+            if (user.Role == "Admin")
+            {
+                // หากเป็น Admin ให้ไปที่หน้า Admin Dashboard
+                return RedirectToAction("Admin", "Admin");
+            }
+            else
+            {
+                // หากเป็น User ให้ไปที่หน้า Books (หรือหน้าที่ผู้ใช้สามารถเข้าถึงได้)
+                return RedirectToAction("Index", "Books");
+            }
         }
+
 
         // Action Method ที่แสดงฟอร์มสมัครสมาชิก (HTTP GET)
         [HttpGet]
@@ -119,15 +140,24 @@ namespace Edu_Library.Controllers
         }
 
         // Action Method สำหรับการออกจากระบบ (Logout)
-        
+
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
-            // ลบข้อมูลการยืนยันตัวตนของผู้ใช้
+            // ลบข้อมูลการยืนยันตัวตน
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
-            // เปลี่ยนเส้นทางไปที่หน้า Login หลังจากออกจากระบบ
+            // ลบ Cookie Authentication
+            Response.Cookies.Delete(".AspNetCore.Cookies");
+
+            // Set cache control headers to prevent the browser from caching the page
+            Response.Headers["Cache-Control"] = "no-store";
+            Response.Headers["Pragma"] = "no-cache";
+            Response.Headers["Expires"] = "0";
+
+            // รีไดเรกต์ไปที่หน้า Login
             return RedirectToAction("Login", "Account");
         }
-    }
+
+      }
 }

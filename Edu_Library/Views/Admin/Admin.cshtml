@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Edu_Library.Models.Book_tb>
+
+@{
+    ViewData["Title"] = "Admin";
+}
+
+<h1>Admin</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ชื่อหนังสือ</th>
+            <th>รายละเอียด</th>
+            <th>ผู้เขียน</th>
+            <th>หมวดหมู่</th>
+            <th>ปกหนังสือ</th>
+            <th>จัดการ</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Name</td>
+                <td>@book.Detail</td>
+                <td>@book.Author</td>
+                <td>@book.Category.Name</td> <!-- แสดงชื่อหมวดหมู่ -->
+                <td><img src="@book.CoverImage" alt="Cover Image" width="100" /></td> <!-- แสดงปกหนังสือ -->
+                <td>
+                    <!-- ลิงก์ไปยังหน้า Edit -->
+                    <a href="@Url.Action("Edit", "Admin", new { id = book.BookId })" class="btn btn-primary">แก้ไข</a>
+
+                    <!-- ลิงก์ไปยังหน้า Delete -->
+                    <a href="@Url.Action("Delete", "Admin", new { id = book.BookId })" class="btn btn-danger">ลบ</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- ปุ่มสำหรับเพิ่มหนังสือ -->
+<a href="@Url.Action("Create", "Admin")" class="btn btn-success">เพิ่มหนังสือ</a>

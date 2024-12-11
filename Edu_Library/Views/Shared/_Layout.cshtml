@@ -32,9 +32,10 @@
                         <label class="form-check-label" for="darkModeSwitch"> Dark Mode</label>
                     </div>
                     <div>
-                        <form action="/Account/Logout" method="post">
-                            <button type="submit" class="btn btn-outline-danger">Logout</button> <!-- ปรับสไตล์ให้เด่นขึ้น -->
+                        <form asp-action="Logout" asp-controller="Account" method="post">
+                            <button type="submit" class="btn btn-danger">Logout</button>
                         </form>
+
                     </div>
                     <script>
                         // เมื่อผู้ใช้กดปุ่ม logout จะเกิดการรีไดเรกต์ไปหน้า Login

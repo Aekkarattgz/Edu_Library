@@ -24,13 +24,10 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     {
         options.LoginPath = "/Account/Login";
         options.LogoutPath = "/Account/Logout";
-        options.SlidingExpiration = true;
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(30);  // เวลาหมดอายุของคุกกี้
-        options.Cookie.HttpOnly = true;
-        options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
-        options.Cookie.Name = "MyAppAuthCookie";
-        options.Cookie.MaxAge = TimeSpan.Zero; // หมดอายุทันทีหลังจากออกจากระบบ
+        options.ExpireTimeSpan = TimeSpan.FromDays(1); // อายุของ Cookie
+        options.SlidingExpiration = true; // ขยายอายุ Cookie อัตโนมัติเมื่อผู้ใช้ยังใช้งานอยู่
     });
+
 
 // การตั้งค่า Authentication นี้ช่วยให้แอปพลิเคชันสามารถจัดการการล็อกอินและล็อกเอาต์โดยใช้ Cookies ได้
 

@@ -36,7 +36,7 @@ namespace Edu_Library.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(string UsernameOrEmail, string Password, bool RememberMe)
         {
-            // ค้นหาผู้ใช้จากฐานข้อมูลที่มีชื่อผู้ใช้หรืออีเมลตรงกับข้อมูลที่กรอก
+            // ค้นหาผู้ใช้จากฐานข้อมูลที่มีชื่อผู้ใช้หรืออีเมลตรงกับข้อมูลที่กรอก และรหัสผ่านตรงกับที่กรอก
             var user = _context.User_tb
                 .FirstOrDefault(u => (u.UserName == UsernameOrEmail || u.Email == UsernameOrEmail) && u.Password == Password);
 
@@ -53,21 +53,15 @@ namespace Edu_Library.Controllers
                 new Claim(ClaimTypes.Name, user.UserName), // กำหนด Claim สำหรับชื่อผู้ใช้
                 new Claim(ClaimTypes.Email, user.Email), // กำหนด Claim สำหรับอีเมล
             };
+
             // สร้าง ClaimsIdentity ด้วย Authentication Scheme แบบ Cookies
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
             // สร้าง ClaimsPrincipal จาก ClaimsIdentity
             var principal = new ClaimsPrincipal(identity);
 
-            // ตั้งค่าการจดจำผู้ใช้
-            var authProperties = new AuthenticationProperties
-            {
-                IsPersistent = RememberMe, // ถ้า RememberMe เป็น true จะเก็บ Cookie ไว้ถาวร
-                ExpiresUtc = DateTime.UtcNow.AddDays(RememberMe ? 30 : 1) // กำหนดอายุ Cookie
-            };
-
             // ลงชื่อเข้าใช้ (Sign In) โดยใช้ Cookie Authentication Scheme
-            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, authProperties);
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
             // ตรวจสอบ Role ของผู้ใช้และรีไดเรกต์ไปยังหน้าต่างๆ
             if (user.Role == "Admin")

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Edu_Library\\Edu_Library\\Edu_Library.csproj": {}
+    "C:\\Users\\OS\\Desktop\\เก็บงาน\\Edu_Library\\Edu_Library\\Edu_Library.csproj": {}
   },
   "projects": {
-    "D:\\Edu_Library\\Edu_Library\\Edu_Library.csproj": {
+    "C:\\Users\\OS\\Desktop\\เก็บงาน\\Edu_Library\\Edu_Library\\Edu_Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
+        "projectUniqueName": "C:\\Users\\OS\\Desktop\\เก็บงาน\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
         "projectName": "Edu_Library",
-        "projectPath": "D:\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
-        "packagesPath": "C:\\Users\\s6402041520201\\.nuget\\packages\\",
-        "outputPath": "D:\\Edu_Library\\Edu_Library\\obj\\",
+        "projectPath": "C:\\Users\\OS\\Desktop\\เก็บงาน\\Edu_Library\\Edu_Library\\Edu_Library.csproj",
+        "packagesPath": "C:\\Users\\OS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\OS\\Desktop\\เก็บงาน\\Edu_Library\\Edu_Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\s6402041520201\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\OS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -26,7 +26,7 @@ namespace Edu_Library.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 // ถ้าผู้ใช้ล็อกอินอยู่แล้ว ให้รีไดเรกต์ไปที่หน้า dashboard หรือหน้าอื่น
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Books");
             }
 
             return View(); // แสดงหน้า Login

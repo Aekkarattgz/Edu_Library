@@ -17,59 +17,81 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Edu_Library
 build_property.RootNamespace = Edu_Library
-build_property.ProjectDir = C:\Users\OS\Desktop\เก็บงาน\Edu_Library\Edu_Library\
+build_property.ProjectDir = D:\Aekkarat\Edu_Library\Edu_Library\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\OS\Desktop\เก็บงาน\Edu_Library\Edu_Library
+build_property.MSBuildProjectDirectory = D:\Aekkarat\Edu_Library\Edu_Library
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/Account/Login.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aekkarat/Edu_Library/Edu_Library/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aekkarat/Edu_Library/Edu_Library/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aekkarat/Edu_Library/Edu_Library/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/Account/Register.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/Admin/Admin.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Admin/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/Books/Index.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Books/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/Home/Index.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/Home/Privacy.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/Shared/Error.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Intro/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW50cm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/_ViewImports.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/_ViewStart.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/Shared/Login_Layout.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Shared/Login_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ2luX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-063qxv35bw
 
-[C:/Users/OS/Desktop/เก็บงาน/Edu_Library/Edu_Library/Views/Shared/_Layout.cshtml]
+[D:/Aekkarat/Edu_Library/Edu_Library/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6awuy9o4k1

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Edu_Library.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc.Rendering;  // เพิ่มบรรทัดนี้
+using Microsoft.AspNetCore.Mvc.Rendering;  
 
 public class AdminController : Controller
 {
@@ -23,7 +23,7 @@ public class AdminController : Controller
         return View(books);
     }
 
-    // GET: Admin/Create
+    [HttpGet]
     public IActionResult Create()
     {
         ViewBag.Categories = new SelectList(_context.Category_tb, "CategoryId", "Name");
@@ -46,7 +46,7 @@ public class AdminController : Controller
         return View(book);
     }
 
-    // GET: Admin/Edit/5
+    [HttpGet]
     public IActionResult Edit(int id)
     {
         var book = _context.Book_tb.Find(id);
@@ -94,7 +94,8 @@ public class AdminController : Controller
         return View(book);
     }
 
-    // GET: Admin/Delete/5
+    [HttpPost]
+    [ValidateAntiForgeryToken]
     public IActionResult Delete(int id)
     {
         var book = _context.Book_tb.Find(id);
@@ -103,17 +104,10 @@ public class AdminController : Controller
             return NotFound();
         }
 
-        return View(book);
-    }
-
-    // POST: Admin/Delete/5
-    [HttpPost, ActionName("Delete")]
-    [ValidateAntiForgeryToken]
-    public IActionResult DeleteConfirmed(int id)
-    {
-        var book = _context.Book_tb.Find(id);
         _context.Book_tb.Remove(book);
         _context.SaveChanges();
-        return RedirectToAction(nameof(Admin));
+        return RedirectToAction("Admin", "Admin");
     }
+
+    
 }

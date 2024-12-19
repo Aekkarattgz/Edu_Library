@@ -31,7 +31,10 @@
                     <a href="@Url.Action("Edit", "Admin", new { id = book.BookId })" class="btn btn-primary">แก้ไข</a>
 
                     <!-- ลิงก์ไปยังหน้า Delete -->
-                    <a href="@Url.Action("Delete", "Admin", new { id = book.BookId })" class="btn btn-danger">ลบ</a>
+                    <form asp-action="Delete" asp-controller="Admin" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@book.BookId" />
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('คุณต้องการลบข้อมูลนี้หรือไม่?');">ลบ</button>
+                    </form>
                 </td>
             </tr>
         }

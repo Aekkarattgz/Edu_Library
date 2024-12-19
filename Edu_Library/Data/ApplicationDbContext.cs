@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore; // นำเข้า namespace สำหรับการใช้ Entity Framework Core
 using Edu_Library.Models; // นำเข้า namespace สำหรับการใช้โมเดลที่กำหนดไว้
-using Microsoft.Extensions.Options; // นำเข้า namespace สำหรับการใช้ Options
+
 
 namespace Edu_Library.Data
 {
